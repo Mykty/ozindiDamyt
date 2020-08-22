@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_library">
+
+    <fragment
+        android:id="@+id/nav_library"
+        android:name="kz.dostyk.ozindidamyt.ui.library.LibraryFragment"
+        android:label="@string/menu_library"
+        tools:layout="@layout/fragment_library" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="kz.dostyk.ozindidamyt.ui.home.HomeFragment"
+        android:label="@string/menu_hobby"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="kz.dostyk.ozindidamyt.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_quizizz"
+        tools:layout="@layout/fragment_slideshow" />
+
+</navigation>

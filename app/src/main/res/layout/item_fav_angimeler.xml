@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLinear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:selectableItemBackground"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:theme="@style/Hei2">
+
+    <LinearLayout
+        android:id="@+id/realL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/aTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/qbold"
+            android:paddingRight="@dimen/album_title_padding"
+            android:text="Тазалық"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/quote1"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:src="@drawable/ic_quote_black" />
+
+            <TextView
+                android:id="@+id/aDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/qbold"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_toStartOf="@id/quote2"
+                android:maxLines="3"
+                android:layout_toEndOf="@id/quote1"
+                android:text="Favorite text, Favorite text,Favorite text,Favorite text,Favorite text,Favorite text, Favorite text, Favorite text,Favorite textFavorite text"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/quote2"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_quote_black" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_library"
+            android:icon="@drawable/kitaphana"
+            android:title="@string/menu_library" />
+        <item
+            android:id="@+id/menu_angime"
+            android:icon="@drawable/gibratty_angime"
+            android:title="@string/menu_angime" />
+        <item
+            android:id="@+id/menu_hobby"
+            android:icon="@drawable/hobby"
+            android:title="@string/menu_hobby" />
+
+        <item
+            android:icon="@drawable/ic_quiziz"
+            android:title="@string/menu_quizizz" />
+
+        <item
+            android:icon="@drawable/ic_marathon_white"
+            android:title="@string/menu_marathon" />
+
+        <item
+            android:icon="@drawable/ic_sport_white"
+            android:title="@string/menu_sport" />
+
+        <item
+            android:icon="@drawable/kino"
+            android:title="@string/menu_movie" />
+
+        <item
+            android:icon="@drawable/jenimpazar"
+            android:title="@string/menu_prize" />
+
+        <item
+            android:icon="@drawable/proforient"
+            android:title="@string/menu_prof_orientation" />
+
+    </group>
+</menu>

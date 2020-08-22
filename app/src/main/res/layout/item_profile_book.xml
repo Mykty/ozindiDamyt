@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/bPhoto"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_margin="10sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_book" />
+
+        <LinearLayout
+            android:id="@+id/realL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/bPhoto"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/bPhoto"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/album_title_padding"
+            android:paddingRight="@dimen/album_title_padding">
+
+            <TextView
+                android:id="@+id/bName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Elon Musk: Tesla, SpaceX"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Ashlee Vance"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/bFinishedDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Бітірген күн: 06 Тамыз"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

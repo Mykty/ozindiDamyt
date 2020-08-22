@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_daily"
+        android:icon="@drawable/ic_daily_white"
+        android:title="Күндік" />
+
+    <item
+        android:id="@+id/nav_book"
+        android:icon="@drawable/kitaphana"
+        android:title="Кітап" />
+
+    <item
+        android:id="@+id/nav_quiz"
+        android:icon="@drawable/ic_quiziz"
+        android:title="Quizziz" />
+
+    <item
+        android:id="@+id/nav_sport"
+        android:icon="@drawable/ic_sport_white"
+        android:title="Sport" />
+
+    <item
+        android:id="@+id/nav_marathon"
+        android:icon="@drawable/ic_marathon_white"
+        android:title="Марафон" />
+
+</menu>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Ozindi Damyt(User)</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="my_books_and_favorite">Кітаптарым</string>
+    <string name="rating">Рейтинг</string>
+
+    <string name="menu_library">Кітапхана</string>
+    <string name="menu_angime">Ғибратты әңгіме</string>
+    <string name="menu_hobby">Хобби</string>
+    <string name="menu_quizizz">Quizizz</string>
+    <string name="menu_marathon">Марафон</string>
+    <string name="menu_sport">Спорт</string>
+    <string name="menu_movie">Кино</string>
+    <string name="menu_prize">Жарыс жеңімпаздары</string>
+    <string name="menu_prof_orientation">Профориентация</string>
+
+    <string name="bottom_menu_1">Күндік</string>
+    <string name="bottom_menu_2">Кітап оқу</string>
+    <string name="bottom_menu_3">Quizzes</string>
+    <string name="bottom_menu_4">Спорт</string>
+    <string name="bottom_menu_5">Марафон</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="book_name">\"Абай Жолы\" романы</string>
+    <string name="data_loading">Күте тұрыңыз, ақпараттар жүктеліп жатыр..</string>
+
+</resources>
