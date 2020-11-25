@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview_id"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    cardview:cardCornerRadius="2dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/book_photo"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ilon_book"/>
+
+        <TextView
+            android:id="@+id/info"
+            android:textColor="#2d2d2d"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Book Title"/>
+
+        <RatingBar
+            android:id="@+id/bookRating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:rating="4"
+            android:stepSize="1"
+            android:theme="@style/RatingBar" />
+
+        <TextView
+            android:id="@+id/author"
+            android:textColor="#2d2d2d"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="author"/>
+
+    </LinearLayout>
+
+</LinearLayout>

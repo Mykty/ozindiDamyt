@@ -21,6 +21,8 @@
     <color name="user_back">#5E35B1</color>
     <color name="bronze">#44498b</color>
     <color name="description">#a9a9a9</color>
+    <color name="colorGray">#CCCCCC</color>
 
+    <color name="bigColor">#1E88E5</color>
 
 </resources>

@@ -12,15 +12,39 @@
         tools:layout="@layout/fragment_library" />
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="kz.dostyk.ozindidamyt.ui.home.HomeFragment"
-        android:label="@string/menu_hobby"
-        tools:layout="@layout/fragment_home"/>
+        android:id="@+id/nav_angimeler"
+        android:name="kz.dostyk.ozindidamyt.ui.angimeler.AngimelerFragment"
+        android:label="@string/menu_angime"
+        tools:layout="@layout/fragment_slideshow"/>
+
+    <fragment
+        android:id="@+id/nav_podcast"
+        android:name="kz.dostyk.ozindidamyt.ui.podcast.PodcastFragment"
+        android:label="@string/menu_podcast"
+        tools:layout="@layout/fragment_recycler_view"/>
+
+    <fragment
+        android:id="@+id/nav_cinema"
+        android:name="kz.dostyk.ozindidamyt.ui.cinema.CinemaFragment"
+        android:label="@string/menu_movie"
+        tools:layout="@layout/fragment_cinema" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="kz.dostyk.ozindidamyt.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_quizizz"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_prof_orientation"
+        android:name="kz.dostyk.ozindidamyt.ui.prof_orientation.ProfOrientationFragment"
+        android:label="@string/menu_prof_orientation"
+        tools:layout="@layout/fragment_prof_orientation" />
+
+    <fragment
+        android:id="@+id/nav_hobby"
+        android:name="kz.dostyk.ozindidamyt.ui.hobby.HobbyFragment"
+        android:label="@string/menu_hobby"
+        tools:layout="@layout/fragment_recycler_view" />
 
 </navigation>

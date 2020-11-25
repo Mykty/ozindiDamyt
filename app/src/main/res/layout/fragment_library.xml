@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!--
     <androidx.cardview.widget.CardView
         android:id="@+id/cardSearch"
         android:layout_width="match_parent"
@@ -22,12 +23,13 @@
         </androidx.appcompat.widget.SearchView>
 
     </androidx.cardview.widget.CardView>
+        android:layout_below="@id/cardSearch"
+    -->
 
     <LinearLayout
         android:id="@+id/langLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/cardSearch"
         android:orientation="horizontal">
 
         <Button

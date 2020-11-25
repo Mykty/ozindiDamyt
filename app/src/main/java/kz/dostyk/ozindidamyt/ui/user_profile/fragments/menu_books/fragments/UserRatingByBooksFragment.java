@@ -25,7 +25,7 @@ import java.util.ArrayList;
 
 import kz.dostyk.ozindidamyt.R;
 import kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_books.adapters.UserRatingAdapter;
-import kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_books.models.User;
+import kz.dostyk.ozindidamyt.ui.user_profile.models.User;
 
 public class UserRatingByBooksFragment extends Fragment /*implements View.OnClickListener */{
     private DatabaseReference mDatabaseRef, ratingUserRef;
@@ -77,9 +77,9 @@ public class UserRatingByBooksFragment extends Fragment /*implements View.OnClic
         recyclerView.setLayoutAnimation(animation);
         recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL));
 
-        userList.add(new User("Vasya", "", "", "", "", "", 1, 130, 10));
-        userList.add(new User("Mykty Baha", "", "", "", "", "", 2, 100, 7));
-        userList.add(new User("Tesla", "", "", "", "", "", 3, 20, 5));
+        userList.add(new User("Vasya", "", "", "", "","","", "", "", "",1, 130, 10));
+        userList.add(new User("Mykty Baha",  "", "", "", "","","", "", "", "", 2, 100, 7));
+        userList.add(new User("Tesla", "", "", "", "","","", "", "", "", 3, 20, 5));
 
         userRatingdapter = new UserRatingAdapter(getActivity(), userList);
         recyclerView.setAdapter(userRatingdapter);

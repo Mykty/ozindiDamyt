@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 import kz.dostyk.ozindidamyt.R;
-import kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_books.models.User;
+import kz.dostyk.ozindidamyt.ui.user_profile.models.User;
 
 public class QuizRatingAdapter extends RecyclerView.Adapter<QuizRatingAdapter.MyTViewHolder> {
     private Context context;
@@ -73,7 +73,7 @@ public class QuizRatingAdapter extends RecyclerView.Adapter<QuizRatingAdapter.My
 //            holder.parentLinear.setBackgroundColor(context.getResources().getColor(R.color.white));
 //        }
 
-        holder.userRating.setText("" + item.getRating());
+        holder.userRating.setText("" + item.getUserRating());
         holder.userPoint.setText("" + item.getPoint());
 
         holder.info.setText(item.getInfo());

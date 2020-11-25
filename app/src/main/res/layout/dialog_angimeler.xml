@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/album_title_padding">
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/qbold"
+        android:text="Тазалық"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/qbold"
+        android:layout_marginTop="5dp"
+        android:scrollbars="vertical"
+        android:layout_below="@id/author"
+        android:text="Favorite text, Favorite text,Favorite text,Favorite text,Favorite text,Favorite text, Favorite text, Favorite text,Favorite textFavorite text"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:id="@+id/iv_like"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/content"
+        android:src="@drawable/ic_not_liked"/>
+
+</RelativeLayout>

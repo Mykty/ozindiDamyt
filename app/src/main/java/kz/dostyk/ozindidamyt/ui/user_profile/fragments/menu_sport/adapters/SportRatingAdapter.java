@@ -17,7 +17,6 @@ import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 import kz.dostyk.ozindidamyt.R;
-import kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_books.models.User;
 import kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_sport.models.SportRating;
 
 public class SportRatingAdapter extends RecyclerView.Adapter<SportRatingAdapter.MyTViewHolder> {

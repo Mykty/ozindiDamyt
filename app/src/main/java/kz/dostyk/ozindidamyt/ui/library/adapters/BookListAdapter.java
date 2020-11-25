@@ -1,7 +1,9 @@
 package kz.dostyk.ozindidamyt.ui.library.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +22,7 @@ import java.util.Calendar;
 import java.util.List;
 
 import kz.dostyk.ozindidamyt.R;
+import kz.dostyk.ozindidamyt.ui.library.activities.OneBookAcvitiy;
 import kz.dostyk.ozindidamyt.ui.library.models.Book;
 import kz.dostyk.ozindidamyt.ui.interfaces.ItemClickListener;
 
@@ -73,7 +76,7 @@ public class BookListAdapter extends RecyclerView.Adapter<BookListAdapter.MyTVie
     @Override
     public MyTViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView;
-        itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_book, parent, false);
+        itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_book_grid, parent, false);
         manageDate();
 
         return new MyTViewHolder(itemView);
@@ -98,20 +101,14 @@ public class BookListAdapter extends RecyclerView.Adapter<BookListAdapter.MyTVie
 
         holder.bookRating.setRating(ratingFirstPart);
 
-        holder.setOnClick(new ItemClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
-            @Override
-            public void onItemClick(View v, int pos) {
-/*
-                Intent intent = new Intent(v.getContext(), OneBookAcvitiy.class);
-                Bundle bundle = new Bundle();
-                bundle.putSerializable("book", bookList.get(pos));
-                intent.putExtras(bundle);
-                v.getContext().startActivity(intent);
+        holder.setOnClick((v, pos) -> {
 
-                 */
+            Intent intent = new Intent(v.getContext(), OneBookAcvitiy.class);
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("book", bookList.get(pos));
+            intent.putExtras(bundle);
+            v.getContext().startActivity(intent);
 
-            }
         });
 
     }

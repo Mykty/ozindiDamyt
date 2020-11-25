@@ -23,6 +23,14 @@ public class Book implements Serializable {
         this.name = name;
     }
 
+    public Book(String photo, String author, String name, String url) {
+        this.photo = photo;
+        this.author = author;
+        this.name = name;
+        this.url = url;
+    }
+
+
     public Book(String book_key, String name, String author, String desc, String language, int page_number, String rating, String photo, String url, String imgStorageName) {
         this.book_key = book_key;
         this.name = name;

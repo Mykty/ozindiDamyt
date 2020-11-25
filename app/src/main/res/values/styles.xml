@@ -22,6 +22,13 @@
         <item name="android:statusBarColor">@color/user_back</item>
     </style>
 
+    <style name="OneBookStyle" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+
     <style name="SearchViewTheme" parent="Widget.AppCompat.SearchView.ActionBar">
         <item name="colorControlNormal">#3949AB</item>
         <item name="colorControlHighlight">#5E35B1</item>
@@ -40,6 +47,68 @@
     <style name="TextAppearanceOfTab" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:textSize">14sp</item>
         <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Title" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/quick</item>
+    </style>
+
+    <style name="Title2" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/quick</item>
+    </style>
+
+    <style name="Think" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="colorControlNormal">#fff</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:fontFamily">@font/qbold</item>
+
+    </style>
+    <style name="MyDarkToolbarStyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:colorSecondary">@color/white</item>
+        <item name="android:titleTextColor">@color/white</item>
+    </style>
+
+
+    <style name="viewParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="viewParent.headerText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="viewParent.headerText.HomeCardTitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="homeCardImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:cropToPadding">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="InputLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/bigColor</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="colorAccent">@color/bigColor</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/bigColor</item>
     </style>
 
 </resources>

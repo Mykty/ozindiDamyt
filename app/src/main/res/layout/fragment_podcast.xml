@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/checkIsEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar"
+            android:fontFamily="@font/quick"
+            android:gravity="center_horizontal"
+            android:text="Әңгімелер сақталмады"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/podcastCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            cardview:cardCornerRadius="5dp"
+            cardview:cardElevation="5dp">
+
+            <LinearLayout
+                android:id="@+id/podcastLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:src="@drawable/podcasts_512dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/progressBar"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/quick"
+                    android:gravity="center_vertical"
+                    android:text="Подкаст тыңдауға ыңғайлы программа"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerForBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_quiz_report" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

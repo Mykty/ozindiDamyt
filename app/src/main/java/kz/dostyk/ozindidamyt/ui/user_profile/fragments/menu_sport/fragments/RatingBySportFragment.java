@@ -23,8 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 
 import kz.dostyk.ozindidamyt.R;
-import kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_books.models.User;
-import kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_quiz.adapters.QuizRatingAdapter;
+import kz.dostyk.ozindidamyt.ui.user_profile.models.User;
 import kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_sport.adapters.SportRatingAdapter;
 import kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_sport.models.SportRating;
 

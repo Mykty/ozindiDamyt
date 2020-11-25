@@ -8,14 +8,17 @@
             android:id="@+id/nav_library"
             android:icon="@drawable/kitaphana"
             android:title="@string/menu_library" />
+
         <item
-            android:id="@+id/menu_angime"
+            android:id="@+id/nav_angimeler"
             android:icon="@drawable/gibratty_angime"
             android:title="@string/menu_angime" />
+
         <item
-            android:id="@+id/menu_hobby"
-            android:icon="@drawable/hobby"
-            android:title="@string/menu_hobby" />
+            android:id="@+id/nav_podcast"
+            android:icon="@drawable/podcast_icon"
+            android:title="@string/menu_podcast" />
+
 
         <item
             android:icon="@drawable/ic_quiziz"
@@ -26,10 +29,21 @@
             android:title="@string/menu_marathon" />
 
         <item
+            android:id="@+id/nav_prof_orientation"
+            android:icon="@drawable/proforient"
+            android:title="@string/menu_prof_orientation" />
+
+        <item
+            android:id="@+id/nav_hobby"
+            android:icon="@drawable/hobby"
+            android:title="@string/menu_hobby" />
+
+        <item
             android:icon="@drawable/ic_sport_white"
             android:title="@string/menu_sport" />
 
         <item
+            android:id="@+id/nav_cinema"
             android:icon="@drawable/kino"
             android:title="@string/menu_movie" />
 
@@ -37,9 +51,13 @@
             android:icon="@drawable/jenimpazar"
             android:title="@string/menu_prize" />
 
+        <!--
+        version 2.0
         <item
-            android:icon="@drawable/proforient"
-            android:title="@string/menu_prof_orientation" />
+            android:id="@+id/logOut"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Log Out" />
+            -->
 
     </group>
 </menu>

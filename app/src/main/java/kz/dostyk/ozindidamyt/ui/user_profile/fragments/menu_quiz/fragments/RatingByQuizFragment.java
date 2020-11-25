@@ -23,8 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 
 import kz.dostyk.ozindidamyt.R;
-import kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_books.adapters.UserRatingAdapter;
-import kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_books.models.User;
+import kz.dostyk.ozindidamyt.ui.user_profile.models.User;
 import kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_quiz.adapters.QuizRatingAdapter;
 
 public class RatingByQuizFragment extends Fragment /*implements View.OnClickListener */{
@@ -77,9 +76,9 @@ public class RatingByQuizFragment extends Fragment /*implements View.OnClickList
         recyclerView.setLayoutAnimation(animation);
         recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL));
 
-        userList.add(new User("Мақсат", "", "", "", "", "", 1, 130, 10));
-        userList.add(new User("Арлан", "", "", "", "", "", 2, 100, 7));
-        userList.add(new User("Қатипаш", "", "", "", "", "", 3, 20, 5));
+        userList.add(new User("Мақсат", "", "", "", "", "","", "", "", "",  1, 130, 10));
+        userList.add(new User("Арлан", "", "", "", "", "","", "", "", "", 2, 100, 7));
+        userList.add(new User("Қатипаш", "", "", "", "", "","", "", "", "", 3, 20, 5));
 
         quizRatingAdapter = new QuizRatingAdapter(getActivity(), userList);
         recyclerView.setAdapter(quizRatingAdapter);

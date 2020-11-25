@@ -23,11 +23,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 
 import kz.dostyk.ozindidamyt.R;
-import kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_books.models.User;
+import kz.dostyk.ozindidamyt.ui.user_profile.models.User;
 import kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_marathon.adapters.MarathonRatingAdapter;
-import kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_sport.adapters.SportRatingAdapter;
 import kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_sport.models.MarathonRating;
-import kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_sport.models.SportRating;
 
 public class RatingByMarathonFragment extends Fragment /*implements View.OnClickListener */{
     private DatabaseReference mDatabaseRef, ratingUserRef;

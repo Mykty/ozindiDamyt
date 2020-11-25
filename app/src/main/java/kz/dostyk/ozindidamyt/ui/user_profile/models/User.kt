@@ -1,4 +1,4 @@
-package kz.dostyk.ozindidamyt.ui.user_profile.fragments.menu_books.models
+package kz.dostyk.ozindidamyt.ui.user_profile.models
 
 data class User(
         var info: String = "",
@@ -6,8 +6,12 @@ data class User(
         var phoneNumber: String = "",
         var imgStorageName: String = "",
         var email: String = "",
+        var dostykName: String = "",
+        var currentBook: String = "",
         var userType: String = "",
-        var rating: Int = 0,
+        var firebaseStorageImageName: String = "",
+        var enterDate: String = "",
+        var userRating: Int = 0,
         var point: Int = 0,
         var bookCount: Int = 0) {
 }
